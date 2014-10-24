@@ -1,0 +1,13 @@
+package名と、フォルダ名をあわせる。
+GOPATHとGOROOTはきちんと設定する
+
+kondoumiyuki-no-MacBook-Air:src miyuki$ go build mymath
+package mymath
+	imports runtime: cannot find package "runtime" in any of:
+	/Users/miyuki/Documents/workspace/Go/GoHelloWorld2/src/pkg/runtime (from $GOROOT)
+	/Users/miyuki/Documents/workspace/Go/GoHelloWorld2/src/runtime (from $GOPATH)
+kondoumiyuki-no-MacBook-Air:src miyuki$ export GOROOT=/usr/local/go/
+kondoumiyuki-no-MacBook-Air:src miyuki$ go build mymath
+kondoumiyuki-no-MacBook-Air:src miyuki$ go test mymath
+ok  	mymath	0.006s
+kondoumiyuki-no-MacBook-Air:src miyuki$ 
